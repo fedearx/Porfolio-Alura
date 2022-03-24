@@ -9,7 +9,8 @@
   <script src="https://kit.fontawesome.com/e01a95bc98.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script defer src="assets/js/index.js"></script>
+  <script defer src="/assets/js/index.js"></script>
+  <script defer src="/assets/js/validarForm.js"></script>
 </head>
 <body>
 
@@ -20,11 +21,11 @@
         <i class="fa fa-bars"></i>
       </button>
       <ul class="nav-menu">
-        <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Sobre mi</a></li>
-        <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Skills</a></li>
-        <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Formación</a></li>
-        <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Experiencia</a></li>
-        <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Contacto</a></li>
+        <li class="nav-menu-item"><a href="#contenedor_sobremi" class="nav-menu-link nav-link">Sobre mi</a></li>
+        <li class="nav-menu-item"><a href="#contenedor_skills" class="nav-menu-link nav-link">Skills / Hobbies</a></li>
+        <li class="nav-menu-item"><a href="#contenedor_estudios" class="nav-menu-link nav-link">Formación</a></li>
+        <li class="nav-menu-item"><a href="#conteneder_experiencia" class="nav-menu-link nav-link">Experiencia</a></li>
+        <li class="nav-menu-item"><a href="#contenedor_contacto" class="nav-menu-link nav-link">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -59,7 +60,7 @@
       </div>
     </section>
 
-    <section class="contenedor_skills">
+    <section id="contenedor_skills">
       
       <div id="skills">
         <h2>Skills</h2>
@@ -74,57 +75,134 @@
       </div>
 
 
-      <!-- <div id="hobbies">
+      <div id="hobbies">
         <h2>Hobbies</h2>
-        <div><img src="img/buceo.svg" alt="Buceo"><p>Buceo</p></div>
-        <div><img src="img/camninar.svg" alt="Caminar"><p>Caminatas</p></div>
-        <div><img src="img/ciclismo.svg" alt="Ciclismo"><p>Ciclismo</p></div>
-        <div><img src="img/lectura.svg" alt="Lectura"><p>Lectura</p></div>
-        <div><img src="img/peliculas.svg" alt="Peliculas"><p>Peliculas</p></div>
-      </div> -->
+        <div class="hobbies">
+          <div><img src="/assets/images/hobbies/diving.svg" alt="Buceo"><p>Bucear</p></div>
+          <div><img src="/assets/images/hobbies/walking.svg" alt="Caminar"><p>Caminar</p></div>
+          <div><img src="/assets/images/hobbies/cycling.svg" alt="Ciclismo"><p>Ciclismo</p></div>
+          <div><img src="/assets/images/hobbies/reading.svg" alt="Lectura"><p>Lectura</p></div>
+          <div><img src="/assets/images/hobbies/code.svg" alt="Programar"><p>Programar</p></div>
+          <div><img src="/assets/images/hobbies/meditation.png" alt="Meditar"><p>Meditar</p></div>
+        </div>
+      </div>
+
     </section>
 
-    <section class="contenedor_estudios">
+    <section id="contenedor_estudios">
       <div id="estudios">
         <h2>Formación Académica</h2>
         <div class="descripcion_estudios">
           <div class="contenido">
-            <div class="estudios_img">
-              <img src="/assets/images/estudios/undav.png" alt="Universidad Nacional de Avellaneda (UNDAV)" class="logo-undav">
+            <div class="estudios_imagen">
+              <img src="/assets/images/estudios/undav.png" alt="Universidad Nacional de Avellaneda (UNDAV)" class="logo_undav">
             </div>
-            <p class="lugar">Universidad Nacional de Avellaneda (UNDAV)</p>
-            <p class="carrera">Ingeniería en Informática</p>
-            <p class="datos_carrera">2021 - En curso</p>
+            <div class="estudios_datos">
+              <p class="lugar">Universidad Nacional de Avellaneda (UNDAV)</p>
+              <p class="carrera">Ingeniería en Informática</p>
+              <p class="datos_carrera">2021 - En curso</p>
+            </div>
           </div>
           <div class="contenido">
-            <div class="estudios_img">
-              <img src="/assets/images/estudios/aluralatam.svg" alt="Oracle ONE Aluta Latam" class="logo-alura">
+            <div class="estudios_imagen">
+              <img src="/assets/images/estudios/aluralatam.svg" alt="Oracle ONE Aluta Latam" class="logo_alura">
             </div>
-            <p class="lugar">Oracle ONE Alura Latam</p>
-            <p class="carrera">Desarrollador front-end</p>
-            <p class="datos_carrera">2021 - En curso</p>
+            <div class="estudios_datos">
+              <p class="lugar">Oracle ONE Alura Latam</p>
+              <p class="carrera">Desarrollador front-end</p>
+              <p class="datos_carrera">2021 - En curso</p>
+            </div>
           </div>
           <div class="contenido">
-            <div class="estudios_img">
-              <img src="/assets/images/estudios/argentinaprograma.png" alt="Argentina Programa" class="logo-argprograma">
+            <div class="estudios_imagen">
+              <img src="/assets/images/estudios/argentinaprograma.png" alt="Argentina Programa" class="logo_argprograma">
             </div>
-            <p class="lugar">#YoProgramo - Argentina Programa</p>
-            <p class="carrera">Desarrollador front-end</p>
-            <p class="datos_carrera">2021 - En curso</p>
+            <div class="estudios_datos">
+              <p class="lugar">#YoProgramo - Argentina Programa</p>
+              <p class="carrera">Desarrollador front-end</p>
+              <p class="datos_carrera">2021 - En curso</p>
+            </div>
           </div>                
         </div>
       </div>
     </section>
     
+    <section id="conteneder_experiencia">
+      <div id="experiencia">
+        <h2>Experiencia Profesional</h2>
+
+        <div class="contenido_experiencia">
+
+          <div class="experiencia_caja">
+
+            <div class="experiencia_datos">
+              <h3>Encriptador de Texto</h3>
+              <p>Oracle ONE - Alura Latam</p>
+              <p>Challenge #1</p>
+              <a href="https://github.com/fedearx/ChallengeONE-Logica" target="_blanck" class="btn_repo">Repositorio</a>
+              <a href="https://fedearx.github.io/ChallengeONE-Logica/" target="_blanck" class="btn_demo">Ver Demo</a>
+            </div>
+            <div class="experiencia_img">
+              <img src="/assets/images/experiencia/encriptador.png" alt="Challenge #1 - Encriptador de Texto">
+            </div>
+          </div>
+
+          <div class="experiencia_caja">
+            <div class="experiencia_img">
+              <img src="/assets/images/experiencia/ahorcado.png" alt="Challenge #2 - Juego del Ahorcado">
+            </div>
+            <div class="experiencia_datos">
+              <h3>Juego del Ahorcado</h3>
+              <p>Oracle ONE - Alura Latam</p>
+              <p>Challenge #2</p>
+              <a href="https://github.com/fedearx/ChallengeONE-Ahorcado" target="_blanck" class="btn_repo">Repositorio</a>
+              <a href="https://fedearx.github.io/ChallengeONE-Ahorcado/" target="_blanck" class="btn_demo">Ver Demo</a>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contenedor_contacto">
+      <div class="formulario">
+        <div class="imagen_form">
+          <img src="assets/images/contacto/contacto.svg" alt="Imagen de telefono" class="img_form">
+        </div>
+        <div class="contenido_form">
+          <h2>Contacto</h2>
+          <p>¿Quieres contactarme?</p>
+          <p>Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+
+          <form id="form" action="https://formsubmit.co/cb2877bce4aaa5519d1f37d8f0cccdc4" method="POST">
+            <input class="input_nombre" type="text" name="nombre" placeholder="Ingrese su nombre" required>
+            <input class="input_email" type="email" name="email" placeholder="Ingrese su email" required>
+            <input class="input_asunto" type="text" name="asunto" placeholder="Asunto" required>
+            <textarea class="textarea_mensaje" rows="10" placeholder="Mensaje a enviar" name="mensaje" required></textarea>
+            <!-- <input type="email" name="email" required> -->
+            <button class="contacto_boton" type="submit">Enviar Mensaje</button>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
+        </form> 
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
 
-  <footer>
 
 
 
+  <footer class="footer">
+    <div class="contenido_footer">
+      <p>&copy; Copyright 2022 - Federico A. Rubio</p>
+      <p>by <a href="#contenedor_contacto">fedearx</a></p>
+    </div>
   </footer>
-
 
   
 </body>

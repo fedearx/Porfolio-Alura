@@ -1,7 +1,10 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
+const presionoLink = document.querySelector(".nav-link");
 
-navToggle.addEventListener("click", () => {
+
+navMenu.addEventListener("click", () => {
+
   navMenu.classList.toggle("nav-menu_visible");
 
   if (navMenu.classList.contains("nav-menu_visible")) {
@@ -9,4 +12,31 @@ navToggle.addEventListener("click", () => {
   } else {
     navToggle.setAttribute("aria-label", "Abrir menú");
   }
+
+});
+
+presionoLink.addEventListener("click", () => {
+
+  navMenu.classList.toggle("nav-menu_visible");
+
+  if (navMenu.classList.contains("nav-menu_visible")) {
+    navToggle.setAttribute("aria-label", "Cerrar menú");
+  } else {
+    navToggle.setAttribute("aria-label", "Abrir menú");
+  }
+
+});
+
+
+
+navToggle.addEventListener("click", () => {
+
+  navMenu.classList.toggle("nav-menu_visible");
+
+  if (navMenu.classList.contains("nav-menu_visible")) {
+    navToggle.setAttribute("aria-label", "Cerrar menú");
+  } else {
+    navToggle.setAttribute("aria-label", "Abrir menú");
+  }
+
 });
